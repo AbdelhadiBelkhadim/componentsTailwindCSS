@@ -16,7 +16,7 @@ module.exports = {
         White90 : '#F9F9F9E5', 
         Error : '#FE416D',
         Warning : '#A04AE3',
-        Success : '#00DDC0',
+        Success : '#00DDC0',  
 
       },
       
