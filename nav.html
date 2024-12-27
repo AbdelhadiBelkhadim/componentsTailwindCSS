@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-white mx-[80px] h-[60px] flex items-center gap-5">
+        <!-- Menu: Visible on small devices only -->
+        <img id="Menu" src="./src/img/menu_24px.png" class="block md:hidden">
+
+        <!-- Logo: Adjusted for spacing on small screens -->
+        <div id="Logo" class="flex items-center gap-4 sm:flex-1 sm:justify-start">
+            <div class="bg-Primary70 rounded-full w-[43px] h-[43px]">
+                <p class="text-White90 font-bold text-[38px] mt-[4px] ml-[5px]">m</p>
+            </div>
+            <p class="font-bold text-[17px] text-black">MyCourse.io</p>
+        </div>
+
+        <!-- Browse Dropdown: Hidden on small devices -->
+        <div class="flex items-center gap-2 hidden md:flex">
+            <p class="font-thin">Browse</p>
+            <img src="./src/img/arrow bottom.png" class="w-[21px] h-[21px]">
+        </div>
+
+        <!-- Search Bar: Hidden on small devices -->
+        <div class="w-[400px] h-[37px] bg-White90 flex justify-between items-center ml-[70px] rounded-sm px-2 hidden md:flex">
+            <input class="text-[16px] font-thin bg-transparent" type="text" placeholder="Search for course">
+            <img src="./src/img/search_24px.png">
+        </div>
+
+        <!-- Become Instructor Link: Hidden on small devices -->
+        <a class="font-thin w-[134px] h-[21px] ml-[70px] hidden md:block">Become Instructor</a>
+
+        <!-- Shopping and Notification: Adjusted for small screens -->
+        <div class="flex items-center gap-3 sm:flex-1 sm:justify-end">
+            <img id="shopping" src="./src/img/shopping.png" class="w-[24px] h-[24px]">
+            <img id="notification" src="./src/img/notifications_none_24px.png" class="w-[24px] h-[24px]">
+        </div>
+
+        <!-- Profile Image: Hidden on small devices -->
+        <img src="./src/img/Mask Group.png" class="hidden md:block">
+    </div>
+</body>
+</html>

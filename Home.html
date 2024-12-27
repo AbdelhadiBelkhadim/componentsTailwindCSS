@@ -1,0 +1,516 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="bg-white mx-[80px] h-[60px] flex items-center gap-5">
+                <!-- Menu: Visible on small devices only -->
+                <img id="Menu" src="./src/img/menu_24px.png" class="block md:hidden">
+        
+                <!-- Logo: Adjusted for spacing on small screens -->
+                <div id="Logo" class="flex items-center gap-4 sm:flex-1 sm:justify-start">
+                    <div class="bg-Primary70 rounded-full w-[43px] h-[43px]">
+                        <p class="text-White90 font-bold text-[38px] mt-[4px] ml-[5px]">m</p>
+                    </div>
+                    <p class="font-bold text-[17px] text-black">MyCourse.io</p>
+                </div>
+        
+                <!-- Browse Dropdown: Hidden on small devices -->
+                <div class="flex items-center gap-2 hidden md:flex">
+                    <p class="font-thin">Browse</p>
+                    <img src="./src/img/arrow bottom.png" class="w-[21px] h-[21px]">
+                </div>
+        
+                <!-- Search Bar: Hidden on small devices -->
+                <div class="w-[400px] h-[37px] bg-White90 flex justify-between items-center ml-[70px] rounded-sm px-2 hidden md:flex">
+                    <input class="text-[16px] font-thin bg-transparent" type="text" placeholder="Search for course">
+                    <img src="./src/img/search_24px.png">
+                </div>
+        
+                <!-- Become Instructor Link: Hidden on small devices -->
+                <a class="font-thin w-[134px] h-[21px] ml-[70px] hidden md:block">Become Instructor</a>
+        
+                <!-- Shopping and Notification: Adjusted for small screens -->
+                <div class="flex items-center gap-3 sm:flex-1 sm:justify-end">
+                    <img id="shopping" src="./src/img/shopping.png" class="w-[24px] h-[24px]">
+                    <img id="notification" src="./src/img/notifications_none_24px.png" class="w-[24px] h-[24px]">
+                </div>
+        
+                <!-- Profile Image: Hidden on small devices -->
+                <img src="./src/img/Mask Group.png" class="hidden md:block">
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="mx-[80px]">
+        <div class="hidden md:flex justify-between my-4">
+                <button class="h-[37px] bg-transparent border-[1px] border-[#1B1B1B99] text-[#1B1B1B99] rounded-[11px] px-[8px] hover:border-Primary70 hover:text-Primary70">All Recommendation</button>
+                <button class="h-[37px] bg-transparent border-[1px] border-[#1B1B1B99] text-[#1B1B1B99] rounded-[11px] px-[8px] hover:border-Primary70 hover:text-Primary70">Adobe Illustrator</button>
+                <button class="h-[37px] bg-transparent border-[1px] border-[#1B1B1B99] text-[#1B1B1B99] rounded-[11px] px-[8px] hover:border-Primary70 hover:text-Primary70">Adobe Photoshop</button>
+                <button class="h-[37px] bg-transparent border-[1px] border-[#1B1B1B99] text-[#1B1B1B99] rounded-[11px] px-[8px] hover:border-Primary70 hover:text-Primary70">UI Design</button>
+                <button class="h-[37px] bg-transparent border-[1px] border-[#1B1B1B99] text-[#1B1B1B99] rounded-[11px] px-[8px] hover:border-Primary70 hover:text-Primary70">Web Programming</button>
+                <button class="h-[37px] bg-transparent border-[1px] border-[#1B1B1B99] text-[#1B1B1B99] rounded-[11px] px-[8px] hover:border-Primary70 hover:text-Primary70">Mobile Programming</button>
+                <button class="h-[37px] bg-transparent border-[1px] border-[#1B1B1B99] text-[#1B1B1B99] rounded-[11px] px-[8px] hover:border-Primary70 hover:text-Primary70">Backend Development</button>
+                <button class="h-[37px] bg-transparent border-[1px] border-[#1B1B1B99] text-[#1B1B1B99] rounded-[12px] px-[8px] hover:border-Primary70 hover:text-Primary70">Vue JS</button>
+        </div>
+        <div class="flex justify-between  pt-4 border-t-2 md:hidden">
+            <a class="font-bold text-[#1B1B1B99] hover:border-b-2 hover:border-b-Primary70 hover:text-Primary70">All</a>
+            <a class="font-bold text-[#1B1B1B99] hover:border-b-2 hover:border-b-Primary70 hover:text-Primary70">Illustrator</a>
+            <a class="font-bold text-[#1B1B1B99] hover:border-b-2 hover:border-b-Primary70 hover:text-Primary70">Photoshop</a>
+            <a class="font-bold text-[#1B1B1B99] hover:border-b-2 hover:border-b-Primary70 hover:text-Primary70">UI Desiign</a>
+
+
+        </div>
+
+
+        <section class="my-[50px]">
+            <h2 class="text-[20px] font-semibold ">Based on your interest</h2>
+            <p class="text-[16px] text-[#1B1B1B99]">We know the best things for You.  Top picks for You.</p>
+
+            <div class="flex justify-between mt-[20px]">
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="./src/img/card.png" class="relative">
+                
+                    <!-- Text Elements in Top Left -->
+                    <div class="absolute  top-0 left-0 flex gap-1 p-2">
+                        <div class="bg-Primary70 w-[47px] h-[18px] rounded-md text-center pt-[2px]">
+                            <p class="text-white text-[8px] ">Best Seller</p>
+                        </div>
+                        <div class="bg-purple-500 w-[40px] h-[18px] rounded text-center pt-[2px]">
+                            <p class="text-white text-[8px]">20% OFF</p>
+                        </div>
+                    </div>
+            
+                    <h2 class="text-[16px] font-semibold">Adobe Illustrator Scretch Course</h2>
+            
+                    <div class="flex">
+                        <img src="./src/img/person.png" alt="">
+                        <a class="text-Primary70 text-[14px]">Kitani Studio</a>
+                    </div>
+            
+                    <p class="w-[285px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+            
+                    <div class="flex items-center">
+                        <img src="./src/img/stars.png" alt="" class="w-[88px] h-[16px]">
+                        <p class="text-[#1B1B1B99]">(1.2K)</p>
+                    </div>
+            
+                    <div class="flex text-center">
+                        <p class="text-[20px] font-medium">$24.92</p>
+                        <p class="text-[16px] text-[#1B1B1B99] line-through mt-[2px] ml-1">$32.90</p>
+                    </div>
+                </div>
+
+
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="./src/img/card2.png" class="relative">
+                
+                    <!-- Text Elements in Top Left -->
+                    <div class="absolute  top-0 left-0 flex gap-1 p-2">
+                        <div class="bg-Primary70 w-[47px] h-[18px] rounded-md text-center pt-[2px]">
+                            <p class="text-white text-[8px] ">Best Seller</p>
+                        </div>
+                        <div class="bg-purple-500 w-[40px] h-[18px] rounded text-center pt-[2px]">
+                            <p class="text-white text-[8px]">20% OFF</p>
+                        </div>
+                    </div>
+            
+                    <h2 class="text-[16px] font-semibold">Bootcamp  Vue.js Web Framework</h2>
+            
+                    <div class="flex">
+                        <img src="./src/img/person.png" alt="">
+                        <a class="text-Primary70 text-[14px]">Kitani Studio</a>
+                    </div>
+            
+                    <p class="w-[285px]">Learn how to make web application with Vue.js Framework.</p>
+            
+                    <div class="flex items-center">
+                        <img src="./src/img/stars.png" alt="" class="w-[88px] h-[16px]">
+                        <p class="text-[#1B1B1B99]">(1.2K)</p>
+                    </div>
+            
+                    <div class="flex text-center">
+                        <p class="text-[20px] font-medium">$24.92</p>
+                        <p class="text-[16px] text-[#1B1B1B99] line-through mt-[2px] ml-1">$32.90</p>
+                    </div>
+                </div>
+
+
+
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="./src/img/card3.png" class="relative">
+                
+                    <!-- Text Elements in Top Left -->
+                    <div class="absolute  top-0 left-0 flex gap-1 p-2">
+                        <div class="bg-Primary70 w-[47px] h-[18px] rounded-md text-center pt-[2px]">
+                            <p class="text-white text-[8px] ">Best Seller</p>
+                        </div>
+                        <div class="bg-purple-500 w-[40px] h-[18px] rounded text-center pt-[2px]">
+                            <p class="text-white text-[8px]">20% OFF</p>
+                        </div>
+                    </div>
+            
+                    <h2 class="text-[16px] font-semibold">Design Fundamentals</h2>
+            
+                    <div class="flex">
+                        <img src="./src/img/person.png" alt="">
+                        <a class="text-Primary70 text-[14px]">Kitani Studio</a>
+                    </div>
+            
+                    <p class="w-[285px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+            
+                    <div class="flex items-center">
+                        <img src="./src/img/stars.png" alt="" class="w-[88px] h-[16px]">
+                        <p class="text-[#1B1B1B99]">(1.2K)</p>
+                    </div>
+            
+                    <div class="flex text-center">
+                        <p class="text-[20px] font-medium">$24.92</p>
+                        <p class="text-[16px] text-[#1B1B1B99] line-through mt-[2px] ml-1">$32.90</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="my-[50px]">
+            <h2 class="text-[20px] font-semibold ">Trending Course</h2>
+            <p class="text-[16px] text-[#1B1B1B99]">We know the best things for You.  Top picks for You.</p>
+
+            <div class="flex justify-between mt-[20px]">
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="./src/img/card4.png" class="relative">
+                
+                    <!-- Text Elements in Top Left -->
+                    <div class="absolute  top-0 left-0 flex gap-1 p-2">
+                        <div class="bg-Primary70 w-[47px] h-[18px] rounded-md text-center pt-[2px]">
+                            <p class="text-white text-[8px] ">Best Seller</p>
+                        </div>
+                        <div class="bg-purple-500 w-[40px] h-[18px] rounded text-center pt-[2px]">
+                            <p class="text-white text-[8px]">20% OFF</p>
+                        </div>
+                    </div>
+            
+                    <h2 class="text-[16px] font-semibold">Adobe Illustrator Scretch Course</h2>
+            
+                    <div class="flex">
+                        <img src="./src/img/person.png" alt="">
+                        <a class="text-Primary70 text-[14px]">Kitani Studio</a>
+                    </div>
+            
+                    <p class="w-[285px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+            
+                    <div class="flex items-center">
+                        <img src="./src/img/stars.png" alt="" class="w-[88px] h-[16px]">
+                        <p class="text-[#1B1B1B99]">(1.2K)</p>
+                    </div>
+            
+                    <div class="flex text-center">
+                        <p class="text-[20px] font-medium">$24.92</p>
+                        <p class="text-[16px] text-[#1B1B1B99] line-through mt-[2px] ml-1">$32.90</p>
+                    </div>
+                </div>
+
+
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="./src/img/card5.png" class="relative">
+                
+                    <!-- Text Elements in Top Left -->
+                    <div class="absolute  top-0 left-0 flex gap-1 p-2">
+                        <div class="bg-Primary70 w-[47px] h-[18px] rounded-md text-center pt-[2px]">
+                            <p class="text-white text-[8px] ">Best Seller</p>
+                        </div>
+                        <div class="bg-purple-500 w-[40px] h-[18px] rounded text-center pt-[2px]">
+                            <p class="text-white text-[8px]">20% OFF</p>
+                        </div>
+                    </div>
+            
+                    <h2 class="text-[16px] font-semibold">Bootcamp  Vue.js Web Framework</h2>
+            
+                    <div class="flex">
+                        <img src="./src/img/person.png" alt="">
+                        <a class="text-Primary70 text-[14px]">Kitani Studio</a>
+                    </div>
+            
+                    <p class="w-[285px]">Learn how to make web application with Vue.js Framework.</p>
+            
+                    <div class="flex items-center">
+                        <img src="./src/img/stars.png" alt="" class="w-[88px] h-[16px]">
+                        <p class="text-[#1B1B1B99]">(1.2K)</p>
+                    </div>
+            
+                    <div class="flex text-center">
+                        <p class="text-[20px] font-medium">$24.92</p>
+                        <p class="text-[16px] text-[#1B1B1B99] line-through mt-[2px] ml-1">$32.90</p>
+                    </div>
+                </div>
+
+
+
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="./src/img/card6.png" class="relative">
+                
+                    <!-- Text Elements in Top Left -->
+                    <div class="absolute  top-0 left-0 flex gap-1 p-2">
+                        <div class="bg-Primary70 w-[47px] h-[18px] rounded-md text-center pt-[2px]">
+                            <p class="text-white text-[8px] ">Best Seller</p>
+                        </div>
+                        <div class="bg-purple-500 w-[40px] h-[18px] rounded text-center pt-[2px]">
+                            <p class="text-white text-[8px]">20% OFF</p>
+                        </div>
+                    </div>
+            
+                    <h2 class="text-[16px] font-semibold">Design Fundamentals</h2>
+            
+                    <div class="flex">
+                        <img src="./src/img/person.png" alt="">
+                        <a class="text-Primary70 text-[14px]">Kitani Studio</a>
+                    </div>
+            
+                    <p class="w-[285px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+            
+                    <div class="flex items-center">
+                        <img src="./src/img/stars.png" alt="" class="w-[88px] h-[16px]">
+                        <p class="text-[#1B1B1B99]">(1.2K)</p>
+                    </div>
+            
+                    <div class="flex text-center">
+                        <p class="text-[20px] font-medium">$24.92</p>
+                        <p class="text-[16px] text-[#1B1B1B99] line-through mt-[2px] ml-1">$32.90</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-between mt-4">
+
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="./src/img/card7.png" class="relative">
+                
+                    <!-- Text Elements in Top Left -->
+                    <div class="absolute  top-0 left-0 flex gap-1 p-2">
+                        <div class="bg-Primary70 w-[47px] h-[18px] rounded-md text-center pt-[2px]">
+                            <p class="text-white text-[8px] ">Best Seller</p>
+                        </div>
+                        <div class="bg-purple-500 w-[40px] h-[18px] rounded text-center pt-[2px]">
+                            <p class="text-white text-[8px]">20% OFF</p>
+                        </div>
+                    </div>
+            
+                    <h2 class="text-[16px] font-semibold">Adobe Illustrator Scretch Course</h2>
+            
+                    <div class="flex">
+                        <img src="./src/img/person.png" alt="">
+                        <a class="text-Primary70 text-[14px]">Kitani Studio</a>
+                    </div>
+            
+                    <p class="w-[285px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+            
+                    <div class="flex items-center">
+                        <img src="./src/img/stars.png" alt="" class="w-[88px] h-[16px]">
+                        <p class="text-[#1B1B1B99]">(1.2K)</p>
+                    </div>
+            
+                    <div class="flex text-center">
+                        <p class="text-[20px] font-medium">$24.92</p>
+                        <p class="text-[16px] text-[#1B1B1B99] line-through mt-[2px] ml-1">$32.90</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="./src/img/card8.png" class="relative">
+                
+                    <!-- Text Elements in Top Left -->
+                    <div class="absolute  top-0 left-0 flex gap-1 p-2">
+                        <div class="bg-Primary70 w-[47px] h-[18px] rounded-md text-center pt-[2px]">
+                            <p class="text-white text-[8px] ">Best Seller</p>
+                        </div>
+                        <div class="bg-purple-500 w-[40px] h-[18px] rounded text-center pt-[2px]">
+                            <p class="text-white text-[8px]">20% OFF</p>
+                        </div>
+                    </div>
+            
+                    <h2 class="text-[16px] font-semibold">Adobe Illustrator Scretch Course</h2>
+            
+                    <div class="flex">
+                        <img src="./src/img/person.png" alt="">
+                        <a class="text-Primary70 text-[14px]">Kitani Studio</a>
+                    </div>
+            
+                    <p class="w-[285px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+            
+                    <div class="flex items-center">
+                        <img src="./src/img/stars.png" alt="" class="w-[88px] h-[16px]">
+                        <p class="text-[#1B1B1B99]">(1.2K)</p>
+                    </div>
+            
+                    <div class="flex text-center">
+                        <p class="text-[20px] font-medium">$24.92</p>
+                        <p class="text-[16px] text-[#1B1B1B99] line-through mt-[2px] ml-1">$32.90</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="./src/img/card9.png" class="relative">
+                
+                    <!-- Text Elements in Top Left -->
+                    <div class="absolute  top-0 left-0 flex gap-1 p-2">
+                        <div class="bg-Primary70 w-[47px] h-[18px] rounded-md text-center pt-[2px]">
+                            <p class="text-white text-[8px] ">Best Seller</p>
+                        </div>
+                        <div class="bg-purple-500 w-[40px] h-[18px] rounded text-center pt-[2px]">
+                            <p class="text-white text-[8px]">20% OFF</p>
+                        </div>
+                    </div>
+            
+                    <h2 class="text-[16px] font-semibold">Adobe Illustrator Scretch Course</h2>
+            
+                    <div class="flex">
+                        <img src="./src/img/person.png" alt="">
+                        <a class="text-Primary70 text-[14px]">Kitani Studio</a>
+                    </div>
+            
+                    <p class="w-[285px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+            
+                    <div class="flex items-center">
+                        <img src="./src/img/stars.png" alt="" class="w-[88px] h-[16px]">
+                        <p class="text-[#1B1B1B99]">(1.2K)</p>
+                    </div>
+            
+                    <div class="flex text-center">
+                        <p class="text-[20px] font-medium">$24.92</p>
+                        <p class="text-[16px] text-[#1B1B1B99] line-through mt-[2px] ml-1">$32.90</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-[20px] font-semibold ">Popular Instructor</h2>
+            <p class="text-[16px] text-[#1B1B1B99]">We know the best things for You.  Top picks for You.</p>
+            
+            <div class="flex justify-between mt-5">
+                <div class="w-[288px] h-[400px] rounded-[18px] bg-gradient-to-t from-[#00000080] to-[#C93B3B00] relative">
+                    <!-- Image with relative position -->
+                    <img src="./src/img/profile1.png" alt="" class="w-full h-full object-cover relative">
+            
+                    <!-- Profile content absolutely positioned -->
+                    <div class="absolute bottom-5 left-0 text-center w-full p-4 text-white">
+                        <h2 class="text-xl font-bold">Alexander Bastian</h2>
+                        <p class="text-sm mt-4">Expert Mobile Engineer</p>
+                    </div>
+                </div>
+
+                <div class="w-[288px] h-[400px] rounded-[18px] bg-gradient-to-t from-[#00000080] to-[#C93B3B00] relative">
+                    <!-- Image with relative position -->
+                    <img src="./src/img/profile2.png" alt="" class="w-full h-full object-cover relative">
+            
+                    <!-- Profile content absolutely positioned -->
+                    <div class="absolute bottom-5 left-0 text-center w-full p-4 text-white">
+                        <h2 class="text-xl font-bold">Labie Carthaline</h2>
+                        <p class="text-sm mt-4">Marketing Specialist</p>
+                    </div>
+                </div>
+
+                <div class="w-[288px] h-[400px] rounded-[18px] bg-gradient-to-t from-[#00000080] to-[#C93B3B00] relative">
+                    <!-- Image with relative position -->
+                    <img src="./src/img/profile3.png" alt="" class="w-full h-full object-cover relative">
+            
+                    <!-- Profile content absolutely positioned -->
+                    <div class="absolute bottom-5 left-0 text-center w-full p-4 text-white">
+                        <h2 class="text-xl font-bold">Jonathan Doe</h2>
+                        <p class="text-sm mt-4">Financial Strategiest</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-[50px] flex justify-center ">
+        <div class="h-[184px] w-full bg-blue-500 rounded-lg p-9 my-4 mx-6 relative">
+            <div class="absolute top-0 right-0">
+                <img src="./src/img/Pattern.png" class="w-auto h-auto">
+            </div>
+        
+            <div class="relative z-10 flex justify-between items-center">
+                <div class="text-White90">
+                    <h2 class="text-[32px] font-bold w-[400px] leading-[42px]">Get Amazing Discount and Course Update </h2>
+                </div>
+        
+                <div class="flex">
+                    <div class="h-[41px] w-[289px] bg-white opacity-30 px-4 flex items-center">
+                        <input type="email" placeholder="Email Address" class="bg-transparent outline-none w-[110px]">
+                        <img src="./src/img/search_24px.png" class="w-[24px] h-[24px]">
+                    </div>
+                    <button class="h-[41px] bg-Primary70 rounded-md text-center text-white ml-4 px-2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <footer class="bg-Black mt-[70px]">
+            <div class="flex justify-between py-[34px] px-[44px]">
+                <div class="flex  gap-4">
+                    <div class="bg-Primary70 rounded-full w-[43px] h-[43px]">
+                        <p class="text-White90 font-bold text-[38px] mt-[4px] ml-[5px]">m</p>
+                    </div>
+                    <p class="font-bold text-[17px] text-white">MyCourse.io</p>
+                </div>
+    
+                <div class="flex flex-col justify-start gap-4">
+                    <a class="font-thin text-white">Web Programming</a>
+                    <a class="font-thin text-white">Mobile Programming</a>
+                    <a class="font-thin text-white">Java Beginner</a>
+                    <a class="font-thin text-white">PHP Beginner</a>
+                    
+                </div>
+    
+    
+                <div class="flex flex-col justify-start gap-4">
+                    <a class="font-thin text-white">Adobe Illustrator</a>
+                    <a class="font-thin text-white">Adobe Photoshop</a>
+                    <a class="font-thin text-white">Design Logo</a>
+                </div>
+    
+    
+    
+                <div class="flex flex-col justify-start gap-4">
+                    <a class="font-thin text-white">Writing Course</a>
+                    <a class="font-thin text-white">Photography</a>
+                    <a class="font-thin text-white">Video Making</a>
+                </div>
+    
+            </div>
+    
+            <hr class="border-t-2 border-gray-500 w-3/4 mx-auto">
+    
+            <div class="flex justify-between  ml-36 py-4">
+                <p class="font-thin text-White90 text-[16px] text-center">Copyright © MyCourse.io 2024. All Rights Reserved</p>
+                <div class="flex gap-4 mr-32">
+                    <img src="./src/img/Twitter.png">
+                    <img src="./src/img/Instagram.png">
+                    <img src="./src/img/Facebook.png">
+                </div>
+            </div>
+        </footer>
+        
+    </main>
+    
+    
+</body>
+</html>
